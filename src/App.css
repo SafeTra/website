@@ -1,0 +1,159 @@
+*::after, *, *::before{box-sizing: border-box; list-style: none; outline: none; padding: 0; margin-top: 0; text-decoration: none; scroll-behavior: smooth;}
+:root{
+  --clr-blue: #48C5D5;
+  --clr-white: #fff;
+  --hover-100: #F1D1AB;
+  --default-navy: #0E2E54;
+  --default-red: #D55848;
+
+  --radius: 0.3125rem;
+}
+a, .nav_link:hover, .btn-outline, nav .nav_link:focus, .signup input + a{color: var(--hover-100)}
+body{ font: 400 clamp(14px, 1vw, 16px)/1.5 "Poppins", sans-serif;}
+h2{font-size: 1.75rem;}
+img{max-width: 100%; object-fit: cover;}
+.container{width: 90%; margin-inline: auto;}
+.m-0, ul{margin: 0}
+.w-30{width: 30%;}
+.w-70, .verify input{width: 70%;}
+.w-100, .col, .btn-form, .signup input:not([type="checkbox"]), .forgotPass input:not([type="checkbox"]), .login input:not([type="checkbox"]), .authenticate input{width: 100%;}
+.fw-500{font-weight: 500;}
+.fw-700, .btn, nav .nav_link.active, nav .nav_link:hover, nav .nav_link:focus{font-weight: 700;}
+.d-flex{display: flex; align-items: center; gap: 0.625rem;}
+.d-grid, .slider.d-flex{gap: 2rem;}
+.d-grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));}
+#how-it-work> .d-grid{grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))}
+.flex-column{flex-direction: column;}
+.align-start{align-items: start;}
+.align-end{align-items: end;}
+.justify-between{justify-content: space-between;}
+.justify-center{justify-content: center;}
+.text-center{text-align: center;}
+.pink_overlay{background-color: var(--pink-100);}
+.visible{display: block !important;}
+header {
+  padding-block: .45rem; position: sticky;
+  top: 0; left: 0; z-index: 100;
+  width: 100%;
+}
+.custom-image {
+  width: 80%; 
+  height: auto;
+  position: relative;
+  /* top: 75px; */
+  left: 10px;
+}
+.fbcard {  
+  width: 300px; 
+  height: 350px;  
+  border-radius: 5px;   
+  overflow:scroll;
+  margin: 0 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+.container {  
+  position: relative;  
+}  
+
+.cards-container {  
+  position: relative;  
+  display: flex;  
+  overflow-x: auto;  
+  scroll-snap-type: x mandatory;  
+}  
+
+.arrow-buttons {  
+  position: absolute;  
+  top: 50%;  
+  left: 0;  
+  right: 0;  
+  transform: translateY(-50%);  
+  display: flex;  
+  justify-content: space-between;  
+}  
+
+.arrow-button {
+  padding: 8px 15px;
+  font-size: 1.5rem;
+  color: #F1D1AB;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  
+}
+.stat-icon {
+  font-size: 6em;
+  padding-right: 0.2em;
+  color: #48C5D5;
+}
+
+.myBtn, .myBtnOutline {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.myBtn:hover {
+  background-color: #07d2ed;
+}
+
+.myBtnOutline:hover{
+  color: #07d2ed;
+}
+
+
+.btn:active, .btn-form:active {color: #48C5D5; background: #fff;}
+.header, .review, .reviews img, nav, .answer {transition: all 0.3s linear;}
+.btn, .hero_card, .review{border-radius: var(--radius);}
+.sticky {box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); background-color: rgba(255, 255, 255, .98); }
+.nav_link{color: var(--clr-black); font-size: 16px; padding-block: .5rem}
+.form .checkbox.d-flex{gap: 0rem;}
+.form .input + .input, form .checkbox, .authenticate .d-flex{margin-top: 1.31rem}
+.authenticate .security{padding: .7rem 1.3rem}
+.signup, .login, .forgotPass, .authenticate, .verify{margin: 0 auto 2rem; max-width: 380px; background: url('./assets/icons/bubbles-mobile.svg') right top no-repeat, url('./assets/icons/bubbles_down-mobile.svg') left bottom no-repeat;}
+.input label{font: 700 .85rem/1.375 "Plus Jakarta Sans", sans-serif; color: var(--clr-black); }
+.input input{border-bottom: 1px solid var(--gray-200); background: var(--clr-white); padding-bottom: 4px;}
+.btn-outline, .btn-primary{padding: .5rem 1rem;}
+.btn-form{margin-block: 1.31rem; padding: 1rem; cursor: pointer; font-size: 1rem; letter-spacing: 1px;}
+.btn-form:hover, .btn-form:focus{background-color: #48C5D5;}
+.btn{ border: 0; transition: background-color .3s ease-in;}
+._logo, .btn{display: inline-block;}
+.err-msg{background-color: #FEF2F2; color: #B91C1C; padding: 1rem; border-radius: var(--radius)}
+.btn-outline, .btn-primary:hover{background-color: transparent !important;}
+.btn-form, .btn-primary, .btn-outline:hover{background: #48C5D5; color: var(--clr-white);}
+.verify > .d-flex{margin-block: 2rem;}
+.verify{min-height: calc(100vh - 10rem); display: grid; place-content: center;}
+section .login, .forgotPass, .authenticate, .verify{padding-block: 3rem;}
+
+/* .footer-con {
+  padding: 0 10%;
+  margin-top: 10%;
+} */
+.footer_logo,
+.address {
+  margin-bottom: 1rem;
+}
+.nav_item {
+  margin: 0.8rem 0;
+}
+.hiw {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+
+@media screen and (max-width: 979px){
+  nav.d-flex > .d-flex{width: 100%;}
+  .hero_section .col{text-align: center;}
+  .hero_section,
+  .hero_section .col + .col, .disable, .slider-btn-lg{display: none !important;}
+  nav, nav > ul{flex-direction: column;}
+}
+
+@media screen and (min-width: 980px) {
+  .container,#faqs, .reviews, .review{width: 80%}
+  .verify input{width: 50%;}
+  .d-grid,.hero_section > .d-flex{column-gap: 4rem;}
+  header .d-flex, #how-it-works > .d-grid{gap: 3rem;}
+  .menu, .slider-btn-sm{display: none !important;}
+  .signup, .login, .forgotPass, .authenticate, .verify{max-width: 480px; background: none;}
+  
+}
+@media screen and (min-width: 1200px) {#faqs, .reviews{width: 50%}}
