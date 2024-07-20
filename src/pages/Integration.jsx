@@ -3,7 +3,7 @@ import { DashboardContainer } from "..";
 const Integration = () => {
   return (
     <DashboardContainer childClassName='' title='Integration'>
-      Integration
+      Integration is very important
     </DashboardContainer>
   )
 }
